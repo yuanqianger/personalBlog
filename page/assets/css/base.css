@@ -1,0 +1,372 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('../img/bg.jpg');
+}
+
+#header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background-color: #080808;
+    width: 100%;
+    height: 50px;
+}
+
+#header #nav{
+    width: 1170px;
+    margin: 0 auto;
+}
+
+#header #nav .nav-left{
+    float: left;
+}
+
+#header #nav .nav-left .nav-log{
+    float: left;
+    height: 50px;
+    margin-right: 30px;
+}
+
+#header #nav .nav-left .nav-log .log{
+    color: #f4f4f4;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 50px;
+}
+
+#header #nav .nav-left ul{
+    float: left;
+}
+
+#header #nav .nav-left ul li{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+}
+
+#header #nav .nav-left ul li a{
+    color: #eee;
+    line-height: 50px;
+    font-size: 14px;
+}
+
+#header #nav .nav-left ul li.active a{
+    color: #fff;
+}
+
+#header #nav .nav-right{
+    float: right;
+    margin: 10px 0px;
+    box-shadow: none;
+}
+
+#header #nav .nav-right input{
+    box-sizing: border-box;
+    height: 30px;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid transparent;
+    padding: 4px 8px;
+    margin-top: -1px;
+}
+
+#header #nav .nav-right #sou{
+    width: 45px;
+    height: 30px;
+    border-radius: 3px;
+    background-color: #fff;
+    outline: none;
+    border: 1px solid transparent;
+}
+
+#header #nav .nav-right #sou:hover{
+    background-color: #eee;
+}
+
+#footer{
+    width: 100%;
+    height: 100px;
+    background-color: #191818;
+    text-align: center;
+    padding: 20px;
+    margin-top: 25px;
+    clear: both;
+}
+
+
+.content{
+    width: 1170px;
+    margin: 75px auto 25px auto;
+}
+
+.content .content-left{
+    float: left;
+    width: 66%;
+    height: 100%;
+    padding: 0px 20px 0 0;
+    box-sizing: border-box;
+}
+
+.content .content-right{
+    float: right;
+    width: 34%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 0 0 0 10px;
+}
+.content .content-right .right-module{
+    width: 100%;
+    background-color: #1f1f1f;
+    color: white;
+    border-radius: 5px;
+    text-align: left;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.content .content-right .right-module .title{
+    padding: 10px 15px;
+    border-radius: 5px 5px 0 0;
+    background-color: #000;
+}
+
+.content .content-right .right-module .tag-link{
+    padding: 0px 15px 10px 15px;
+}
+
+.content .content-right .right-module .tag-link a{
+    display: inline-block;
+    padding: 0px 1px 0px 0px;
+}
+
+.content .content-right .right-module a{
+    font-size: 14px;
+    color: dodgerblue;
+}
+
+.content .content-right .right-module .hot-ul li{
+    height: 40px;
+    border-bottom: 1px solid #292929;
+    padding: 10px 15px;
+}
+
+.content .content-right .right-module .hot-ul li a{
+    color: #eee;
+    font-size: 14px;
+}
+
+.content .content-right .right-module .comment-ul li a{
+    color: #777;
+    font-size: 14px;
+}
+
+.content .content-right .right-module .hot-ul li a:hover,
+.content .content-right .right-module .comment-ul li a:hover,
+.content .content-right .right-module .link a:hover{
+    color: #337ab7;
+}
+
+.content .content-right .right-module .comment-ul li{
+    height: 70px;
+    border-bottom: 1px solid #292929;
+    padding: 10px 15px;
+}
+
+.content .content-right .right-module .comment-ul li div .comment-author{
+    font-weight: 700;
+    font-size: 14px;
+}
+.content .content-right .right-module .comment-ul li div .comment-time{
+    float: right;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.content .content-right .right-module .comment-ul li p {
+    margin-top: 5px;
+}
+
+.content .content-right .right-module .link{
+    padding: 0px 15px;
+    box-sizing: border-box;
+}
+
+.content .content-right .right-module .link span{
+    display: inline-block;
+    width: 50%;
+    height: 30px;
+    margin-top: 10px;
+    border-bottom: 1px solid #292929;
+}
+
+.content .content-right .right-module .link span a{
+    font-size: 14px;
+    color: #fff;
+}
+
+
+#footer ul{
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#footer ul li{
+    float: left;
+    margin: 0 10px;
+}
+#footer ul li a{
+    color: #a2a2a2;
+    font-size: 14px;
+}
+
+#footer p{
+    margin-top: 10px;
+    color: #a2a2a2;
+    font-size: 14px;
+}
+
+.content .content-left .page-tool{
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.content .content-left .page-tool ul li{
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    padding: 0px 12px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+
+.content .content-left .page-tool ul li.last-page{
+    border-radius: 3px 0px 0px 3px;
+}
+
+.content .content-left .page-tool ul li.last{
+    border-radius: 0px 3px 3px 0px;
+}
+
+.content .content-left .page-tool ul li.active{
+    border: 1px solid #191818;
+    background-color: #1f1f1f;
+    color: #fff;
+}
+
+.content .content-left .page-tool ul li:not(.active):hover{
+    cursor: pointer;
+    background-color: #eee;
+}
+
+
+
+
+
+
+
+
+
+
+
+.content .content-left .send-comments{
+    width: 100%;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    border: 1px solid #e3e3e3;
+    box-shadow: 1px 1px 5px #666;
+    padding: 20px 20px;
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+
+.content .content-left .send-comments div{
+    margin: 10px 0px;
+}
+
+.content .content-left .send-comments div input,
+.content .content-left .send-comments div textarea{
+    height: 35px;
+    width: 35%;
+    border-radius: 5px;
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    color: #555;
+}
+
+.content .content-left .send-comments div input#comment-email{
+    width: 45%;
+    margin-left: 20px;
+}
+
+.content .content-left .send-comments div textarea{
+    width: 100%;
+    height: 100px;
+}
+
+.content .content-left .send-comments button{
+    height: 35px;
+    padding: 5px 15px;
+    border-radius: 5px;
+    background-color: #fff;
+    outline: none;
+    border: 1px solid #ccc;
+}
+
+.content .content-left .send-comments button:hover{
+    background-color: rgb(31, 143, 196);
+    color: #fff;
+    cursor: pointer;
+}
+
+.content .content-left .send-comments div span{
+    display: inline-block;
+    position: absolute;
+    bottom: 0px;
+}
+
+.content .content-left .send-comments .reply{
+    font-size: 12px;
+    color: #337ab7;
+    cursor: pointer;
+}
+.content .content-left .send-comments .reply.show{
+    display: none;
+}
+
+.content-left .blog-commonts .msg {
+    display: inline-block;
+    padding: 20px 0px 8px;
+}
+
+.content-left .blog-commonts .blog-commont {
+    width: 100%;
+    padding: 10px 15px;
+    background-color: #d9edf7;
+    border: 1px dashed #7ca4c1;
+    margin-bottom: 10px;
+}
+
+.content-left .blog-commonts .blog-commont p {
+    padding: 5px 0;
+    color: #31708f;
+    font-size: 14px;
+}
+
+.content-left .blog-commonts .blog-commont .commont-about .name {
+    font-size: 16px;
+    font-weight: 700;
+}
+.content-left .blog-commonts .blog-commont .commont-about .button {
+    cursor: pointer;
+}

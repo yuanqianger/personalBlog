@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>个人博客</title>
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/about.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="./assets/js/axios.js"></script>
+</head>
+<body>
+    <header id="header">
+        <div id="nav">
+            <div class="nav-left">
+                <div class="nav-log">
+                    <a href="/" class="log">yimax个人博客 | 技术博客</a>
+                </div>
+                <ul>
+                    <li class="active">
+                        <a href="/">首页</a>
+                    </li>
+                    <li>
+                        <a href="/sitemap.html">地图</a>
+                    </li>
+                    <li>
+                        <a href="/about.html">关于</a>
+                    </li>
+                    <li>
+                        <a href="/guestbook.html">留言</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <input type="text" placeholder="输入标签查找" v-model="inpT">
+                <button id="sou" @click="handleClick">搜索</button>
+            </div>
+        </div>
+    </header>
+    <div class="content">
+        <div class="content-left">
+            <div class="description">
+                <div class="about-title">关于我</div>
+                <p class="about-introduce">博主yimax，性别女</p>
+                <p>会修电脑的野生程序员<br>前端博主<br>前端博主<br>前端博主</p>
+                <div class="about-title">关于博客</div>
+                <p class="about-introduce">博主很懒+词穷，佛系更新…<br>前端博主<br>前端博主<br>前端博主</p>
+            </div>
+        </div>
+        <div class="content-right">
+            <div class="right-module" id="random-tags">
+                <div class="title">随机标签云</div>
+                <div class="tag-link">
+                    <a v-for="item in tags"
+                       :href="item.link"
+                       :style="{color: randomColor(), fontSize: randomSize()}"
+                    >
+                       {{ item.tag }}
+                    </a>
+                </div>
+            </div>
+            <div class="right-module" id="new-hot">
+                <div class="title">最近热门</div>
+                <ul class="hot-ul">
+                    <li v-for='item in titleList'>
+                        <a :href="item.link">{{ item.title }}</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="right-module" id="new-comment">
+                <div class="title">最新评论</div>
+                <ul class="comment-ul">
+                    <li v-for="item in commentList">
+                        <div>
+                            <span class="comment-author">{{ item.author }}</span>
+                            <span class="comment-time">{{ item.time }}</span>
+                        </div>
+                        <p><a :href="item.link">{{ item.comment }}</a></p>
+                    </li>
+                </ul>
+            </div>
+            <div class="right-module">
+                <div class="title">友情链接</div>
+                <div class="link">
+                    <span><a href="#">个人博客</a></span><span><a href="#">个人博客</a></span>
+                    <span><a href="#">个人博客</a></span><span><a href="#">个人博客</a></span>
+                    <span><a href="#">个人博客</a></span><span><a href="#">个人博客</a></span>
+                    <span><a href="#">个人博客</a></span><span><a href="#">个人博客</a></span>
+                    <span><a href="#">个人博客</a></span><span><a href="#">个人博客</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="footer">
+        <ul>
+            <li><a href="#">JavaScript</a></li>
+            <li><a href="#">JavaScript</a></li>
+            <li><a href="#">JavaScript</a></li>
+            <li><a href="#">JavaScript</a></li>
+            <li><a href="#">JavaScript</a></li>
+            <li><a href="#">JavaScript</a></li>
+            <li><a href="#">JavaScript</a></li>
+            <li><a href="#">JavaScript</a></li>
+            <li><a href="#">JavaScript</a></li>
+            <li><a href="#">JavaScript</a></li>
+        </ul>
+        <p>Copyright © 2010-2019 个人博客 All rights reserved. 由免费开源的WordPress强力驱动. 鲁ICP备14017955号站长统计</p>
+    </footer>
+    <script src="./assets/js/base.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>个人博客</title>
+    <link rel="stylesheet" href="./assets/css/sitemap.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="./assets/js/axios.js"></script>
+</head>
+<body>
+    <header>
+        <div class="title">yimax个人博客's SiteMap</div>
+    </header>
+    <div id="nav">
+        <a href="/">yimax个人博客</a>
+        >>
+        <a href="/sitemap.html">站点地图</a>
+    </div>
+    <div id="content">
+        <span>最新文章</span>
+        <ul>
+            <li v-for="item in blogList"><a :href="item.id">{{ item.title }}</a></li>
+        </ul>
+    </div>
+    <footer id="footer">
+        <p>Baidu-SiteMap   Latest Update: 2020-01-28 10:37:14</p>
+        <p>Copyright © 2010-2019 个人博客 All rights reserved. 由免费开源的WordPress强力驱动. 鲁ICP备14017955号站长统计</p>
+    </footer>
+    <script src="./assets/js/sitemap.js"></script>
+</body>
+</html>

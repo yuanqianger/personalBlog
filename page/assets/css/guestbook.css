@@ -1,0 +1,44 @@
+.content-left .description {
+    width: 100%;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    border: 1px solid #e3e3e3;
+    box-shadow: 1px 1px 5px #666;
+    padding: 20px 15px;
+}
+
+.content-left .description p{
+    font-size: 14px;
+    padding: 5px 0px;
+    color: red;
+}
+
+.content-left .description p.description-titie{
+    color: #000;
+}
+
+.content-left .blog-commonts .msg {
+    display: inline-block;
+    padding: 20px 0px 8px;
+}
+
+.content-left .blog-commonts .blog-commont {
+    width: 100%;
+    padding: 10px 15px;
+    background-color: #d9edf7;
+    border: 1px dashed #7ca4c1;
+}
+
+.content-left .blog-commonts .blog-commont p{
+    padding: 5px 0;
+    color: #31708f;
+    font-size: 14px;
+}
+
+.content-left .blog-commonts .blog-commont .commont-about .name {
+    font-size: 16px;
+    font-weight: 700;
+}
+.content-left .blog-commonts .blog-commont .commont-about .button {
+    cursor: pointer;
+}
